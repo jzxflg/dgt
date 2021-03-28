@@ -131,7 +131,7 @@
          #noidung{ width: 100%;   }
          #noidung span{background: #f9f2e0; text-align: justify; display: block; padding: 20px;}
          #button{ width: 100%;  }
-         #timer{position: fixed; bottom: 0; right: 0; background: #f00; color: #fff; font-size: 20px; padding: 15px;z-index: 2;}
+         #timer{position: fixed; bottom: 0; right: 0; background: #f00; color: #fff; font-size: 25px; padding: 10px 15px;z-index: 2;}
 
       </style>
    </head>
@@ -782,6 +782,7 @@
          <span></span>
       </div>
 
+<br><br>
 
       <script src="jquery-1.12.4.min.js"></script> 
       <script type="text/javascript">
@@ -811,7 +812,7 @@
             {
                 clearInterval(counter);
                 document.getElementById("timer").innerHTML="0";
-                
+
                  $(".page a").removeClass("act");
                  $(this).addClass("act");         
                  var audio = $("audio");         
