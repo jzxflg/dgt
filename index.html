@@ -796,25 +796,28 @@
            return false;
          
          })
-         var count;
-         var counter;
+         
+
           $(".page a").click( function(){
-            count=5;
-            var counter=setInterval(timer, 1000);      
+            var count=5;
+            var counter=setInterval(timer, 1000);
+            var loai = $("#rtcAudioPath").val();
+            var mp3 = $(this).attr("file");
+
             function timer()
           {
             count=count-1;
             if (count <= 0)
             {
-              clearInterval(counter);
-                 var loai = $("#rtcAudioPath").val();
-                 var mp3 = $(this).attr("file");         
+                clearInterval(counter);
+                document.getElementById("timer").innerHTML="0";
+                
                  $(".page a").removeClass("act");
                  $(this).addClass("act");         
                  var audio = $("audio");         
                  audio.attr("src",loai + "/" +mp3 + ".mp3");                
                  audio[0].play();
-              return;
+                return;
             }
             document.getElementById("timer").innerHTML=count;
           }
