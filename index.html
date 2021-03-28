@@ -131,14 +131,14 @@
          #noidung{ width: 100%;   }
          #noidung span{background: #f9f2e0; text-align: justify; display: block; padding: 20px;}
          #button{ width: 100%;  }
-     
+         #timer{position: fixed; bottom: 0; right: 0; background: #f00; color: #fff; font-size: 20px; padding: 15px;z-index: 2;}
 
       </style>
    </head>
    <body>
       <div class="clear15"></div>
    
-      <div class="clear"></div>
+   <div id="timer"></div>
 
       <div id="button">
            <div id="tab">
@@ -796,24 +796,31 @@
            return false;
          
          })
-         
+         var count;
+         var counter;
           $(".page a").click( function(){
-           var loai = $("#rtcAudioPath").val();
-           var mp3 = $(this).attr("file");
-         
-         // $.get(txt, function(data){
-         //    $("#a4 pre").text(data);
-         // });            
-         $(".page a").removeClass("act");
-         $(this).addClass("act");
-         
-         var audio = $("audio");
-         
-         audio.attr("src",loai + "/" +mp3 + ".mp3");
-         
-         
-         audio[0].play();
+            count=5;
+            var counter=setInterval(timer, 1000);      
+            function timer()
+          {
+            count=count-1;
+            if (count <= 0)
+            {
+              clearInterval(counter);
+                 var loai = $("#rtcAudioPath").val();
+                 var mp3 = $(this).attr("file");         
+                 $(".page a").removeClass("act");
+                 $(this).addClass("act");         
+                 var audio = $("audio");         
+                 audio.attr("src",loai + "/" +mp3 + ".mp3");                
+                 audio[0].play();
+              return;
+            }
+            document.getElementById("timer").innerHTML=count;
+          }
          });
+
+
          
          
           $('.page a').simpleTooltip({
