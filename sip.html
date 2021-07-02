@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1" />
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<style>
+		body{ background: #2d3748; font-family: Arial;  font-size: 16px; }
+		h1{margin: 0 0 10px 0;}
+		#lix1{ display: flex;  flex-wrap: wrap; }
+		#lix1 span{     flex: 12.5%; padding: 15px 0; text-align: center; font-weight: bold; cursor: pointer;
+			max-width: 12.5%;box-sizing: border-box; border: 1px solid #fff; color: #000; }
+			
+			#lix1 span.t1{ background: #4fff6f; }
+			#lix1 span.t2{ background: #b289ed; }
+			#lix1 span.t3{ background: #41c37a; }
+			#lix1 span.t4{ background: #af0fcd;}
+			#lix1 span.t5{ background: #f5b4c8; }
+			#lix1 span.t6{ background: #8b0653; }
+			#lix1 span.t7{ background: #70f4a1;}
+			#lix1 span.t8{ background: #7c9909;}
+			#lix1 span.t9{ background: #1c5bbb; }
+			#lix1 span.t10{ background: #be6fa8; }
+			#lix1 span.t11{ background: #bd6ea6; }
+			
+			#lix1 span.act , #lix1 span:hover { background: #fff; color: #000; border: 1px dashed #000; }
+			.clear{ clear: both; display: block; }
+			
+			#head{ display: flex; }
+			#lix2 , #lix3{border: 1px dashed #fff;     width: 100%; color: #fff; padding: 15px;  height: 120px;}
+			#lix2{    flex: 20%;}
+			#lix3{    flex: 79%; overflow-y: scroll;}			
+			#lix3 pre{    white-space: pre-wrap; font-family: Arial; line-height: 22px;}			
+			#lix2 audio{ width: 100%; }
+			#timer{position: fixed; bottom: 0; right: 0; background: #f00; color: #fff; font-size: 25px; padding: 10px 15px;z-index: 2;}
+		</style>
+	</head>
+	<body>
+
+		
+	<div id="head">
+			<div id="lix2">
+				<h1>APP GCT</h1>
+				<audio controls src=""></audio>						
+			</div>	
+			<div id="lix3">
+				<pre></pre>
+			</div>	
+		</div>
+
+		<i class="clear"></i>
+		<div id="lix1">
+			<span class="t1">Alo</span>
+			<span class="t1">Chào bạn</span>
+			<span class="t1">Mở lời, hỏi 3Tui</span>
+			<span class="t1">Xin bạn vài phút</span>
+			<span class="t1">Chưa nghe qua</span>
+			<span class="t1">Chưa à</span>
+			<span class="t1">Nghe, thoái chưa</span>
+			<span class="t1">Đệ tử giúp thoái</span>
+			<span class="t1">Hả</span>
+			<span class="t1">Có nghe không</span>
+			<span class="t1">Nghe hiểu không</span>
+			<span class="t1">Minh bạch chưa</span>
+			<span class="t1">Được không</span>
+			<span class="t1">Được hay không</span>
+			<span class="t1">Tốt</span>
+			<span class="t1">Đúng đúng</span>
+			<span class="t1">Tôi nói</span>
+			<span class="t1">Bạn nói</span>
+			<span class="t1">Không hiểu</span>
+			<span class="t1">Không hiểu 2</span>
+			<span class="t1">Tuổi của tôi</span>
+			<span class="t1">Im lặng</span>
+			<span class="t1">Tạm biệt</span>
+			<span class="t1">Không đúng</span>
+			<span class="t2">Gọi lại</span>
+			<span class="t2">Mục đích</span>
+			<span class="t2">Mục đích 2</span>
+			<span class="t2">Phúc Âm</span>
+			<span class="t2">Đừng bỏ máy</span>
+			<span class="t2">Đừng tức giận</span>
+			<span class="t2">Gọi từ nước ngoài</span>
+			<span class="t2">Bạn, đừng lo lắng</span>
+			<span class="t2">Người Trung Quốc</span>
+			<span class="t2">Tôi ở VN</span>
+			<span class="t2">Tôi tu PLC</span>
+			<span class="t2">Thoái rồi à</span>
+			<span class="t2">Nông dân cũng cần</span>
+			<span class="t2">Ồ, Bạn nhỏ</span>
+			<span class="t2">Bạn nhỏ đeo khăn</span>
+			<span class="t2">Bạn nhỏ nhớ Niệm</span>
+			<span class="t3">Nghe tam thoái</span>
+			<span class="t3">3Tui rất quan trọng</span>
+			<span class="t3">Chưa nghe 3Tui</span>
+			<span class="t3">3Tui với ai cũng tốt</span>
+			<span class="t3">Tam thoái ngắn</span>
+			<span class="t3">Tam thoái ngắn 2</span>
+			<span class="t3">Không thề</span>
+			<span class="t3">Thề độc</span>
+			<span class="t3">Tam thoái bình an</span>
+			<span class="t3">Tam thoái là cái gì</span>
+			<span class="t3">Vì sao phải thoái</span>
+			<span class="t3">Giới thiệu 3T</span>
+			<span class="t3">Trung cộng tà ác</span>
+			<span class="t3">Diệt Trung cộng</span>
+			<span class="t3">Tàng Tự Thạch</span>
+			<span class="t3">ĐCSTQ trả lương</span>
+			<span class="t4">Đảng đoàn đội</span>
+			<span class="t4">Đảng đoàn đội 2</span>
+			<span class="t4">Đảng</span>
+			<span class="t4">Đoàn</span>
+			<span class="t4">Đội</span>
+			<span class="t4">Nhắc đội</span>
+			<span class="t4">Chưa đeo qua</span>
+			<span class="t4">Hóa danh thoái</span>
+			<span class="t5">Cơ hội thoái</span>
+			<span class="t5">Chỉ cần nói Hảo</span>
+			<span class="t5">Nói Tốt</span>
+			<span class="t5">Hơn 290 triệu</span>
+			<span class="t5">Hơn 300 triệu</span>
+			<span class="t5">Thoái, Thần xem</span>
+			<span class="t5">Thoái, không tu</span>
+			<span class="t5">3Tui, chờ đợi</span>
+			<span class="t5">Bạn à, có duyên</span>
+			<span class="t5">Bạn à, có duyên 2</span>
+			<span class="t5">Đi làm cũng thoái</span>
+			<span class="t5">Đi làm cũng thoái 2</span>
+			<span class="t5">Đệ tử Đại Pháp</span>
+			<span class="t5">Sư phụ bảo tôi</span>
+			<span class="t5">Cảnh sát không lo</span>
+			<span class="t5">Chữ in trên tiền</span>
+			<span class="t6">Nghe PLC</span>
+			<span class="t6">Pháp Luân Công</span>
+			<span class="t6">Pháp Luân Công tốt</span>
+			<span class="t6">Đại Pháp HT</span>
+			<span class="t6">Chân tướng CB1</span>
+			<span class="t6">Chân tướng CB2</span>
+			<span class="t6">Bức hại PLC</span>
+			<span class="t6">Mổ cướp nội tạng</span>
+			<span class="t7">Mật niệm</span>
+			<span class="t7">Niệm chậm</span>
+			<span class="t7">Nói 9 chữ</span>
+			<span class="t7">Nhớ Niệm</span>
+			<span class="t7">Không bảo bạn tu</span>
+			<span class="t7">Thiện đãi PLC</span>
+			<span class="t7">Chúc bình an</span>
+			<span class="t7">Nói gia đình</span>
+			<span class="t7">Khuyên Niệm</span>
+			<span class="t7">Quyết định tốt</span>
+			<span class="t7">Nói “Tui Le”</span>
+			<span class="t7">Đừng làm xấu</span>
+			<span class="t7">Đừng làm xấu</span>
+			<span class="t7">Đừng làm xấu</span>
+			<span class="t7">Đừng làm xấu</span>
+			<span class="t7">Đừng làm xấu</span>
+			<span class="t8">ĐCSTQ là tà ác</span>
+			<span class="t8">Vu khống PLC</span>
+			<span class="t8">Phúc hay Tiền</span>
+			<span class="t8">Với người yêu tiền</span>
+			<span class="t8">Tiền hay Mạng</span>
+			<span class="t8">Tin Chúa Jêsus</span>
+			<span class="t8">TQ không TC</span>
+			<span class="t8">Tu luyện tin Thần</span>
+			<span class="t9">TĐ THẢM HỌA</span>
+			<span class="t9">TĐ PLC</span>
+			<span class="t9">TĐ 3 TUI</span>
+			<span class="t9">TĐ GIỚI THIỆU</span>
+			<span class="t9">Xã hội bại hoại</span>
+			<span class="t9">Tai họa nhiều</span>
+			<span class="t9">TĐ Dịch Bệnh</span>
+			<span class="t9">TĐ Dịch Bệnh</span>
+			
+		</div>
+		<i class="clear"></i>
+	
+
+		<br><br><br><br>
+
+		<script type="text/javascript">
+
+
+			$(document).ready( function(){
+
+				var nums = ["云清 - yún qīng", "云静 - yunjing", "博容 - bó róng", "博文 - bó wén", "学顺 - xué shùn", "彩高 - cǎi gāo", "德立 - dé lì", "德辉 - dé huī", "心宽 - xīn kuān", "怀实 - huái shí", "怀艺 - huái yì", "才天 - cái tiān", "放亮 - fàng liàng", "文常 - wén cháng", "文来 - wén lái", "新广 - xīn guǎng", "时富 - shí fù", "明秋 - míng qiū", "春竹 - chūn zhú", "晨顺 - chén shùn", "景亮 - jǐng liàng", "智真 - Zhì zhēn", "朋常 - Péng cháng", "朋春 - Péng chūn", "杰冬 - jié dōng", "松新 - Sōng xīn", "林富 - Lín fù", "林真 - Lín zhēn", "欣多 - Xīn duō", "永全 - Yǒng quán", "泉洋 - Quán yáng", "洋正 - Yáng zhèng", "海正 - Hǎi zhèng", "添圆 - Tiān yuán", "添宁 - Tiān níng", "添安 - Tiān ān", "玉实 - Yù shí ", "玉康 - Yù kāng ", "玉海 - Yù hǎi", "环喜 - Huán xǐ ", "福国 - fú guó", "立实 - Lì shí", "立福 - lì fú", "笛安 - Dí ān ", "紫常 - Zǐ cháng", "紫慧 - Zǐ huì ", "羽聪 - Yǔ cōng", "联月 - Liányuè", "舒原 - Shūyuán", "舒智 - Shū zhì", "航安 - Hángān", "良万 - liáng wàn", "语辉 - Yǔ huī", "贵杰 - guì jié", "辉东 - huī dōng", "达景 - dá jǐng", "连喜 - Lián xǐ", "连彩 - Lián cǎi", "道明 - dào míng", "长添 - Zhǎng tiān", "顺义 - Shùnyì", "高书 - gāo shū", "高扬 - Gāoyáng", "高敏 - gāomǐn"],
+				ranNums = [],
+				i = nums.length,
+				j = 0;
+				var hd="";
+				while (i--) {
+
+					j = Math.floor(Math.random() * (i+1));
+					ranNums.push(nums[j]);
+					hd+= "<span class='t11'>" + nums.splice(j,1)[0] + "</span>";
+					if (i==56) {
+						break;
+					}
+				}
+
+				$("#lix1").append(hd);
+
+				$("#lix1 span").click( function(){
+					
+
+					var name = $(this).text();
+					var txt = "all/"+name+".txt";
+					var mp3 = "all/"+name+".mp3";
+					$.get(txt, function(data){
+						$("#lix3 pre").text(data);
+					});
+					$("#lix1 span").removeClass("act");
+					$(this).addClass("act");
+
+					var audio = $("#lix2 audio");
+							audio.attr("src",mp3);
+							audio[0].play();
+
+					
+				});
+
+
+
+				document.oncontextmenu = function() {return false;};
+				$("#lix1 span").contextmenu(function() {
+					var name = $(this).text();
+					var txt = "all/"+name+".txt";
+					$.get(txt, function(data){
+						$("#lix3 pre").text(data);
+					});
+				});
+
+				$("#lix1 span.t11").click( function(){
+					var name = $(this).text();
+					var txt = "hoadanh/"+name+".txt";
+					var mp3 = "hoadanh/"+name+".mp3";
+					$.get(txt, function(data){
+						$("#lix3 pre").text(data);
+					});
+					$("#lix1 span").removeClass("act");
+					$(this).addClass("act");
+
+					var audio = $("#lix2 audio");
+					audio.attr("src",mp3);
+					audio[0].play();
+				});
+
+			})
+		</script>
+	</body>
+	</html>
