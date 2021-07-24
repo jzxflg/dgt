@@ -128,9 +128,9 @@
          audio{ float: left; }
          .clear{ clear: both; }
          .clear15{ clear: both; height: 15px; }
-         #noidung{ width: 100%;   }
-         #noidung span{background: #f9f2e0; text-align: justify; display: block; padding: 20px;}
-         #button{ width: 100%;  }
+         #noidung{ width:200px; float:left;  }
+         #noidung span{background: #f9f2e0; text-align: justify; display: block; padding: 20px; }
+         #button{ float:left; margin-left:20px;  }
          #timer{position: fixed; bottom: 0; right: 0; background: #f00; color: #fff; font-size: 25px; padding: 10px 15px;z-index: 2;}
 
       </style>
@@ -140,6 +140,14 @@
    
    <!-- <div id="timer">0</div> -->
 
+             <div id="noidung">
+         <!-- <h3 style="color: #fff">Đã thêm đủ 14 giọng ở Page 1</h3> -->
+         <div class="clear15"></div>
+         <audio src="" controls=""></audio>
+         <div class="clear15"></div>
+         <span></span>
+      </div>
+      
       <div id="button">
            <div id="tab">
          <a class="act" href="#a1">Page 1</a>
@@ -775,13 +783,7 @@
       </div>
 
 
-            <div id="noidung">
-         <!-- <h3 style="color: #fff">Đã thêm đủ 14 giọng ở Page 1</h3> -->
-         <div class="clear15"></div>
-         <audio src="" controls=""></audio>
-         <div class="clear15"></div>
-         <span></span>
-      </div>
+     
 
 <br><br>
 
